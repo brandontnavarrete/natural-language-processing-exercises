@@ -74,10 +74,10 @@ def lemmatize(sentence):
     wnl = nltk.stem.WordNetLemmatizer()
     
     # loop, for every word in the sentence perform ps.stem
-    lemmas = [wnl.lemmatize(word) for word in article.split()]
+    lemmas = [wnl.lemmatize(word) for word in sentence.split()]
     
     # join works to string
-    sentence_lemmed = ' '.join(stems)
+    sentence_lemmed = ' '.join(lemmas)
     
     return sentence_lemmed
     
